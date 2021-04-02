@@ -100,10 +100,10 @@ public class UserDao {
                 user.setEmail(resultSet.getString("email"));
                 user.setPassword(resultSet.getString("password"));
                 list.add(user);
+                System.out.println(user);
             }
         } catch (SQLException e){
             e.printStackTrace();
         }
-        System.out.println((list));
     }
 }

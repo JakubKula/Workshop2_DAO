@@ -9,9 +9,9 @@ public class MainDao {
 
         // tworzenie nowego usera
         User user = new User();
-        user.setUserName("Michal Wierzba");
-        user.setEmail("michalwierzba2@gmail.com ");
-        user.setPassword("wierzbawierzba");
+        user.setUserName("bozena");
+        user.setEmail("bozkan123@gmail.com ");
+        user.setPassword("wbozena123");
         UserDao uD = new UserDao();
         uD.create(user);
         User read = uD.read(1);
@@ -33,7 +33,8 @@ public class MainDao {
         System.out.println(userDaoNew.read(1));
 
         // wyswietlanie wszytstkich urzytkownikow
-        uD.findAll();
+        UserDao uDFindAll = new UserDao();
+        uDFindAll.findAll();
 
 
     }
