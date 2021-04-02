@@ -32,6 +32,7 @@ public class MainDao {
         userDaoNew.delete(1);
         System.out.println(userDaoNew.read(1));
 
+
         // wyswietlanie wszytstkich urzytkownikow
         uD.findAll();
 
