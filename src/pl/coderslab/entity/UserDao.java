@@ -33,7 +33,6 @@ public class UserDao {
             statement.setString(2, user.getEmail());
             statement.setString(3, hashPassword(user.getPassword()));
             statement.executeUpdate();
-            //Pobieramy wstawiony do bazy identyfikator, a następnie ustawiamy id obiektu user.
             ResultSet resultSet = statement.getGeneratedKeys();
             if (resultSet.next()) {
                 user.setId(resultSet.getInt(1));
@@ -87,6 +86,7 @@ public class UserDao {
             e.printStackTrace();
         }
     }
+
     public void findAll(){
         List<User> list = new ArrayList<>();
         try (Connection conn = DbUtil.getConnection()){
