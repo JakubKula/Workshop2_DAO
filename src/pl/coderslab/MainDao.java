@@ -30,9 +30,9 @@ public class MainDao {
 
         // usuwanie usera
         userDaoNew.delete(1);
-      System.out.println(userDaoNew.read(1));
+        System.out.println(userDaoNew.read(1));
 
-      // wyswietlanie wszytstkich urzytkownikow
+        // wyswietlanie wszytstkich urzytkownikow
         uD.findAll();
 
 
